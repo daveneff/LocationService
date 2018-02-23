@@ -18,7 +18,7 @@ For authorization, it only accepts `When In Use` as being properly authorized.
 You can customize this yourself in the `CLLocationManagerDelegate` method.
 
 #### Location Name  
-The service defaults to fetching the `sublocality` and `administrativeArea` as its first priority. It then goes futher up the location hierarchy, until `country`. If it can't fetch any of the above, it errors out.  
+The service defaults to fetching the `subLocality` and `locality` as its first priority. It then goes futher up the location hierarchy, until `country`. If it can't fetch any of the above, it errors out.  
 These priorities can be changed in `LocationService`'s `reverseGeocode(...)` method.
 
 ## Example Usage
