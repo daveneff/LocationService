@@ -1,4 +1,4 @@
-#LocationService
+# LocationService
 
 **LocationService** is a simple, drop-in location manager for iOS written in Swift 4. 
 
@@ -11,17 +11,17 @@ It is written so whichever object holds reference to the service (a `ViewControl
 
 It can be expanded upon and improved -- please feel free to submit a pull request if you have changes that make it better!
 
-##Notes
+## Notes
 
-####Authorization  
+#### Authorization  
 For authorization, it only accepts `When In Use` as being properly authorized.  
 You can customize this yourself in the `CLLocationManagerDelegate` method.
 
-####Location Name  
+#### Location Name  
 The service defaults to fetching the `sublocality` and `administrativeArea` as its first priority. It then goes futher up the location hierarchy, until `country`. If it can't fetch any of the above, it errors out.  
 These priorities can be changed in `LocationService`'s `reverseGeocode(...)` method.
 
-##Example Usage
+## Example Usage
 ```swift
 final class ViewController: UIViewController {
 
